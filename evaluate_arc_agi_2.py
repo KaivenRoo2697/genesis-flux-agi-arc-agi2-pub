@@ -10,8 +10,8 @@ def set_deterministic():
 def list_tasks(eval_dir):
     files = sorted([f for f in os.listdir(eval_dir) if f.endswith(".json")])
     print(f"Found {len(files)} tasks")
-    assert len(files) == 3, f"Expected 3 tasks, found {len(files)}"
-    print("Tasks sample:", files[:3])
+    assert len(files) == 120, f"Expected 120 tasks, found {len(files)}"
+   print("Tasks sample:", files[:3])
     return files
 def solve_task(task_obj):
     # TODO: replace with real logic
